@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activty.WelComeActivity">
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:id="@+id/app_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_action_computer">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_below="@+id/app_img"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="80dp"
+        android:text="@string/app_name">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/start_button"
+        android:background="@drawable/welcome_button_backgoued"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_height="60dp"
+        android:text="点击进入"
+        android:textColor="#0011FF">
+
+    </Button>
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/app_version"
+        android:layout_alignParentBottom="true">
+
+    </TextView>
+
+
+
+</RelativeLayout>
